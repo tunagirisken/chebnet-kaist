@@ -1,0 +1,16 @@
+# ChebNet training configuration.
+
+defaults:
+  - default
+
+model:
+  name: chebnet
+  hidden_dim: 64
+  num_heads: 4  # unused by ChebNet; kept for shared config schema
+  dropout: 0.3
+  cheb_k: 3
+
+training:
+  epochs: 10
+  batch_size: 64
+  learning_rate: 0.001

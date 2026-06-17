@@ -1,0 +1,25 @@
+# Shared defaults for all experiments.
+
+seed: 42
+num_classes: 5
+node_features: 3
+segment_size_sec: 0.1
+
+paths:
+  data_dir: data/kaist
+  cache_file: data/kaist/graphs_cache.pt
+  checkpoint_dir: checkpoints
+  results_dir: results
+
+training:
+  epochs: 50
+  batch_size: 64
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  val_split: 0.30
+  lr_scheduler_patience: 5
+  lr_scheduler_factor: 0.5
+  ignore_cache: false
+
+evaluation:
+  batch_size: 256

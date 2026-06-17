@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+dist/
+build/
+.venv/
+venv/
+.numba_cache/
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+*.swp
+
+# KAIST data (too large for GitHub; see data/kaist/README.md)
+data/kaist/Car-Hacking Dataset/
+data/kaist/graphs_cache.pt
+data/kaist/**/*.csv
+data/kaist/**/*.txt
+data/kaist/**/*.7z
+
+# Training outputs (checkpoint is tracked intentionally)
+results/
+
+# Archives / local delivery artifacts
+*.zip
+src/*.zip
